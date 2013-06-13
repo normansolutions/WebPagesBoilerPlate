@@ -1,0 +1,45 @@
+﻿@using System.Web.Optimization;
+
+@{
+    App.Database = "MainDB";
+    WebSecurity.InitializeDatabaseConnection((string)App.Database, "Users", "UserId", "UserName", true);
+}
+
+@{
+    var bundles = BundleTable.Bundles;
+
+    //javaScript
+
+    bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
+           "~/js/release/vendor/custom.modernizr*"));
+
+
+    bundles.Add(new ScriptBundle("~/bundles/js").Include(
+                "~/js/release/foundation.min.js",
+                "~/js/release/mainScript.js"
+                ));
+
+
+    bundles.Add(new ScriptBundle("~/bundles/validate").Include(
+           "~/js/release/jquery.validate.js",
+           "~/js/release/jquery.validate.unobtrusive.js"));
+
+    //css
+
+
+    bundles.Add(new StyleBundle("~/bundles/foundation").Include(
+                "~/css/normalize.css",
+                "~/css/foundation.css"));
+
+    bundles.Add(new StyleBundle("~/bundles/style").Include(
+                "~/css/style.css",
+                "~/css/social_foundicons.css"
+                ));
+
+    //css ie7                
+
+    bundles.Add(new StyleBundle("~/bundles/cssie").Include(
+                "~/css/ie.css",
+                "~/css/social_foundicons_ie7.css"));            
+
+}

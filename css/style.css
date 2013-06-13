@@ -1,0 +1,174 @@
+﻿/*:::: Main Stylesheet ::::*/
+/*:::: Typography ::::*/
+/*:::: Validation ::::*/
+/*:::: Subtle Color Scheme ::::*/
+/*:::: Complementary Color Scheme ::::*/
+/*:::: Mixins ::::*/
+/* Center elements or text */
+.centered-text {
+  text-align: center;
+}
+/* Shadow mixins */
+/* Border radius mixins */
+/* Transitions, transforms, gradients, and animation */
+/* Box Sizing */
+/* styles for validation helpers */
+.field-validation-error {
+  color: #fc8888;
+  line-height: 1.3em;
+}
+.field-validation-valid {
+  display: none;
+}
+input.input-validation-error {
+  border: 1px solid #fc8888;
+  background-color: #fbf5f5;
+}
+textarea.input-validation-error {
+  border: 1px solid #fc8888;
+  background-color: #fbf5f5;
+}
+input[type="checkbox"].input-validation-error {
+  border: 0 none;
+}
+.validation-summary-errors {
+  color: #fc8888;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.validation-summary-valid {
+  display: none;
+}
+textarea {
+  width: 100%;
+  height: 260px;
+  padding: 5px;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+/*:::: YOUR STYLES HERE ::::*/
+/*Admin*/
+#RoleId,
+#Role {
+  font-size: 0.9em;
+}
+.inline-control-label {
+  display: inline;
+  padding-left: 10px;
+}
+/*:::: No styles below this line ::::*/
+/*:::: Helper classes ::::*/
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+.invisible {
+  visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+  
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    -webkit-text-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+  	 * Don't show links for images, or javascript/internal links
+  	 */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
