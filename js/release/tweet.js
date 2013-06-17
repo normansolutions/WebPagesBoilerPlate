@@ -21,7 +21,7 @@
     $.when($.getJSON(url, function (data) {
         $.each(data, function (i, item) {
             var json = $.parseJSON(item.RawSource)
-            $('#tweets').append('<li>' + $.timeago(json.created_at) + ': ' + item.TextAsHtml + '</li>');
+            $('#tweets').append('<li>' + $.timeago(new Date(Date.parse(json.created_at.replace(/( \+)/, ' UTC$1')))) + ': ' + item.TextAsHtml + '</li>');
         });
     })).then(function () {
         var tweets = $('#tweets');
