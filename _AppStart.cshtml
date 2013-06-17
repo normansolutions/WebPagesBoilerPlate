@@ -15,14 +15,19 @@
 
 
     bundles.Add(new ScriptBundle("~/bundles/js").Include(
-                "~/js/release/foundation.min.js",
+                "~/js/release/vendor/foundation.min.js",
                 "~/js/release/mainScript.js"
                 ));
 
+    bundles.Add(new ScriptBundle("~/bundles/tweet").Include(
+                "~/js/release/vendor/plugins/jquery.timeago.js",
+                "~/js/release/tweet.js"
+                ));                
+
 
     bundles.Add(new ScriptBundle("~/bundles/validate").Include(
-           "~/js/release/jquery.validate.js",
-           "~/js/release/jquery.validate.unobtrusive.js"));
+           "~/js/release/vendor/plugins/jquery.validate.js",
+           "~/js/release/vendor/plugins/jquery.validate.unobtrusive.js"));
 
     //css
 

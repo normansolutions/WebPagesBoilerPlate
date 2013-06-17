@@ -56,6 +56,36 @@ textarea {
   display: inline;
   padding-left: 10px;
 }
+/*Twitter*/
+#panelTwit {
+  height: 100px;
+}
+#panelTwit #tweets {
+  height: 8em;
+  overflow-y: hidden;
+  line-height: 1.5em;
+  font-size: .9em;
+}
+#panelTwit #tweets > li {
+  height: 8em;
+  padding: 7px 3px 3px 3px;
+  list-style: none;
+  font-size: 1.1em;
+  -webkit-text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+}
+.bottom-shadow {
+  background: url(../img/bottomShadow.png) no-repeat;
+  width: 150px;
+  height: 14px;
+  margin-top: -22px;
+  left: 1px;
+}
+.quotes {
+  padding-top: 7px;
+  margin-left: 7px;
+  position: absolute;
+}
 /*:::: No styles below this line ::::*/
 /*:::: Helper classes ::::*/
 .ir {
