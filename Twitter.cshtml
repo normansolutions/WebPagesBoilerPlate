@@ -1,0 +1,25 @@
+﻿@{
+    Layout = "_SiteLayout.cshtml";
+    Page.Title = "Twitter";
+}
+
+<section>
+    <div class="large-8 columns">
+        <div class="row">
+            <div class="eight columns centered">
+                <h6><a href="" target="_blank"><i class="foundicon-twitter level"></i>
+                    Latest Tweets
+                </a>
+                </h6>
+                <img class="quotes" src="~/img/quotes.png" alt="normansolutions twitter" />
+                <div id="panelTwit" class="panel radius panelShadow">
+                    <ul id="tweets"></ul>
+                </div>
+                <div class="bottom-shadow"></div>
+            </div>
+        </div>
+    </div>
+</section>
+@section baseScript{
+    @System.Web.Optimization.Scripts.Render("~/bundles/tweet")
+}
