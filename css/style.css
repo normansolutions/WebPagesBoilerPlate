@@ -64,10 +64,8 @@ textarea {
   color: #eeeeee;
   text-align: center;
   padding: 3px 0;
-}
-#cookie-bar.fixed {
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
 }
@@ -76,7 +74,7 @@ textarea {
   padding: 0;
 }
 #cookie-bar a {
-  color: #ffffff;
+  color: #f7f7f7;
   display: inline-block;
   border-radius: 3px;
   text-decoration: none;

@@ -1,2 +1,6 @@
 ﻿$(document).foundation();
-$.cookieBar();
+$(document).ready(function () {
+    $.cookieBar({
+        message: 'We use cookies'          
+    });
+});

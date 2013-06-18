@@ -46,27 +46,27 @@
         <div class="large-12 columns" id="main">
 
             <!-- Navigation -->
-                    <nav class="top-bar">
-                        <ul class="title-area">
-                            <!-- Title Area -->
-                            <li class="name">
-                                <h1>
-                                   <a href= "@Href("~/")">Home</a>
-                                </h1>
-                            </li>
-                            <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-                        </ul>
-                        <section class="top-bar-section">
-                            <!-- Right Nav Section -->
-                            <ul class="right">
-                                <li class="divider"></li>
-                                <li><a href= "@Href("~/Contact")">Contact Us</a></li>
-                                <li class="divider"></li>
-                                <li><a href= "@Href("~/")">Home</a></li>
-                            </ul>
-                        </section>
-                    </nav>
-                    <!-- End Top Bar -->
+            <nav class="top-bar">
+                <ul class="title-area">
+                    <!-- Title Area -->
+                    <li class="name">
+                        <h1>
+                            <a href= "@Href("~/")">Home</a>
+                        </h1>
+                    </li>
+                    <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+                </ul>
+                <section class="top-bar-section">
+                    <!-- Right Nav Section -->
+                    <ul class="right">
+                        <li class="divider"></li>
+                        <li><a href= "@Href("~/Contact")">Contact Us</a></li>
+                        <li class="divider"></li>
+                        <li><a href= "@Href("~/")">Home</a></li>
+                    </ul>
+                </section>
+            </nav>
+            <!-- End Top Bar -->
 
             <!-- End Navigation -->
 
@@ -91,6 +91,8 @@
     <!-- Included JS Files -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>        window.jQuery || document.write('<script src="\js/release/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="~/js/release/vendor/foundation.min.js"></script>
+
     @System.Web.Optimization.Scripts.Render("~/bundles/js")
 
     @RenderSection("baseScript", required: false)
@@ -103,6 +105,6 @@
             g.src = '//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g, s)
         }(document, 'script'));
-        </script>
+    </script>
 </body>
 </html>

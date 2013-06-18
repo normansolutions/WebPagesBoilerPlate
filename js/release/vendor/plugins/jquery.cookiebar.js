@@ -23,7 +23,7 @@
 			var doReturn = false;
 		}
 		var defaults = {
-			message: 'We use cookies to ensure that we give you the best experience on our website', //Message displayed on bar
+			message: 'This website uses cookies', //Message displayed on bar
 			acceptButton: true, //Set to true to show accept/enable button
 			acceptText: 'I Understand', //Text on accept/enable button
 			declineButton: false, //Set to true to show decline/disable button
