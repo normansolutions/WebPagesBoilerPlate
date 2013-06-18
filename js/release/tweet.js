@@ -1,7 +1,7 @@
 ﻿function InOut(elem) {
     elem.delay()
         .fadeIn()
-        .delay(4000)
+        .delay(8000)
         .fadeOut(
 
     function () {
