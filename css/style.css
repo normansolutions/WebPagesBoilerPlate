@@ -58,7 +58,7 @@ textarea {
 }
 /*Cookie Bar*/
 #cookie-bar {
-  background: #111111;
+  background: #272727;
   height: 24px;
   line-height: 24px;
   color: #eeeeee;
@@ -68,6 +68,7 @@ textarea {
   bottom: 0;
   left: 0;
   width: 100%;
+  z-index: 999;
 }
 #cookie-bar p {
   margin: 0;

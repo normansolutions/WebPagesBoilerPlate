@@ -1,6 +1,6 @@
 ﻿$(document).foundation();
 $(document).ready(function () {
     $.cookieBar({
-        message: 'We use cookies'          
+        message: 'This website uses cookies'          
     });
 });
