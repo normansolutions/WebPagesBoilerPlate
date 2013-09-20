@@ -24,7 +24,7 @@ function parseDate(str) {
 
 function twitterLinks(text) {
     var base_url = 'http://twitter.com/';   // identica: 'http://identi.ca/'
-    var hashtag_part = 'search?q=#';        // identica: 'tag/'
+    var hashtag_part = 'search?q=%23';        // identica: 'tag/'
     // convert URLs into links
     text = text.replace(
         /(>|<a[^<>]+href=['"])?(https?:\/\/([-a-z0-9]+\.)+[a-z]{2,5}(\/[-a-z0-9!#()\/?&.,]*[^ !#?().,])?)/gi,
